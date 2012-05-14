@@ -1,4 +1,4 @@
-!SLIDE smaller
+!SLIDE smaller bullets incremental
 # Qué es git? #
 * sistema de gestión de contenido de directorios (directory content management system)
 * sistema de almacenamiento de la historia de un arbol (tree history storage system)
@@ -10,9 +10,10 @@
 
 * mostramos a linux torvalds?*
 
-!SLIDE transition=fade
+!SLIDE bullets incremental transition=fade
+#Qué no es Git#
 
-* definitivamente no es subversion
+* definitivamente no es SubVersion
 * no es una evolución a partir de subversion
 
 !SLIDE
@@ -21,6 +22,88 @@
 * componente almacenamiento: diffs/deltas , DAG/snapshots
 * componente ubicación: local, centralizado, distribuido
 
-nota. fundamental los gráficos acá
+!SLIDE
+## Almacenamiento##
+### Delta ###
+![delta](diff-storage-1.png)
+
+!SLIDE
+## Almacenamiento##
+### Delta ###
+![delta](diff-storage-2.png)
+
+!SLIDE
+## Almacenamiento##
+### Delta ###
+![delta](diff-storage-3.png)
+
+!SLIDE
+## Almacenamiento##
+### Delta ###
+![delta](diff-storage-4.png)
+!SLIDE
+## Almacenamiento##
+### Delta ###
+![delta](diff-storage-5.png)
+
+!SLIDE
+## Almacenamiento##
+### Snapshot o DAG ###
+![dag](snapshot-storage-1.png)
+
+!SLIDE
+## Almacenamiento##
+### Snapshot o DAG ###
+![dag](snapshot-storage-2.png)
+
+!SLIDE
+## Almacenamiento##
+### Snapshot o DAG ###
+![dag](snapshot-storage-3.png)
+
+!SLIDE
+## Almacenamiento##
+### Snapshot o DAG ###
+![dag](snapshot-storage-4.png)
+
+!SLIDE
+## Almacenamiento##
+### Snapshot o DAG ###
+![dag](snapshot-storage-5.png)
+
+!SLIDE
+## Almacenamiento ##
+### Delta vs Snapshot###
+![delta](diff-storage-5.png)
+![dag](snapshot-storage-5.png)
+
+
+!SLIDE transition=fade
+## Taxonomía ##
+![tax](taxonomy-matrix.png)
+
+!SLIDE
+## Taxonomía ##
+![tax](taxonomy-1.png)
+
+!SLIDE
+## Taxonomía ##
+![tax](taxonomy-2.png)
+
+!SLIDE
+## Taxonomía ##
+![tax](taxonomy-3.png)
+
+!SLIDE
+## Taxonomía ##
+![tax](taxonomy-4.png)
+
+!SLIDE
+## Taxonomía ##
+![tax](taxonomy-5.png)
+
+!SLIDE
+## Taxonomía ##
+![tax](taxonomy-6.png)
 
 
