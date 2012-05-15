@@ -4,20 +4,28 @@
 !SLIDE
     Estructura del repositorio
 
-!SLIDE fade
+!SLIDE transition=fade
+
 ## git directory ##
 
-!SLIDE fade
-## git directory ##
+.git (sólo en el root de la carpeta de trabajo)
 
-.git
-
-!SLIDE fade
-## git directory ##
-
-.git
-
-GIT_DIR
+    $ tree .git
+    .git
+    |-- config
+    |-- description
+    |-- HEAD
+    |-- hooks
+    |   |-- commit-msg.sample
+    |-- index
+    |-- info
+    |   `-- exclude
+    |-- objects
+    |   |-- info
+    |   `-- pack
+    `-- refs
+        |-- heads
+        `-- tags
 
 !SLIDE bullets incremental transition=fade
 ## Git Directory ##
@@ -56,54 +64,156 @@ GIT_DIR
     .git/objects/pack/pack-b916c14d0420eaaca7a2d9eeea2fd851d4e5b48a.idx
 
 !SLIDE bullets incremental transition=fade
-## object database ##
+## Object Database ##
 * "packed" format
 
-!SLIDE bullets incremental transition=scrollRight
-## object database ##
-* object types
-* blob
-* tree
-* commit
-* tag
+!SLIDE transition=scrollRight
+## Object Database ##
+![types](object-types.png)
 
 !SLIDE bullets incremental transition=fade
 ## object database ##
 * blob
-* every file constitutes a blob
+* cada fichero/file es un blob
+![tree2](tree2.png)
+
+!SLIDE transition=fade
+## object database ##
+* blob
+![blob](blob-detail.png)
 
 !SLIDE bullets incremental transition=fade
 ## object database ##
 * tree 
-* cada directorio se representa con un tree
-* es una estructura reflexiva (un tree puede contener una referencia a un tree)
+* cada directorio/carpeta se representa con un tree
+![tree3](tree3.png)
+
+!SLIDE bullets incremental transition=fade
+## object database ##
+* tree 
+![tree](tree-detail.png)
 
 !SLIDE bullets incremental transition=fade
 ## object database ##
 * commit
 * un puntero a un root tree + metadata commit (parent, autor, commiter, fecha, mensaje)
+![commit](commit-detail.png)
 
 !SLIDE bullets incremental transition=fade
 ## object database ##
 * DAG
+![dag](object-relationship.png)
+
+!SLIDE transition=fade
+## Object Database ##
+![types](object-types.png)
 
 !SLIDE bullets incremental transition=fade
 ## object database ##
-* tag
-* puntero a un objeto en la base (x lo gral un commit)
+![tag](tag-detail.png)
 
-!SLIDE bullets incremental transition=fade
-## object database ##
-* INMUTABLES !
+* .git/objects/20/c71174453dc760692cd...
+* .git/refs/tags/v1.0
+
+!SLIDE
+## Object Database ##
+![types](object-types.png)
+
+!SLIDE transition=fade
+## Object Database ##
+
+![types](object-types-locked.png)
+
+INMUTABLES !
+
+!SLIDE bullets incremental 
+## Muy importante! ##
+* no se borra nada (bueno casi)
+* es muy seguro (SHA1 crypto safe)
+* no se borra la historia
+* se escribe una historia alternativa
 
 !SLIDE bullets incremental transition=scrollLeft
 ## references ##
-* lightweight, moveable pointers to a commit
-* stored under .git/refs/*
+* punteros "livianos", móviles a distintos commits
+* guardados en .git/refs/*
 
-!SLIDE
+!SLIDE bullets incremental
+# references #
 
-* workflow & structure sample: blobs, tree, commits, tags & refs, branches
+![ref](reference.png)
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario1.png)
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario2.png)
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario3.png)
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario4.png)
+
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario4b.png)
+
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario5.png)
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario6.png)
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario8.png)
+
+!SLIDE transition=fade
+# Ejemplo #
+![ref](scenario7.png)
+
+!SLIDE transition=scrollLeft
+# El índice: 3 cabezas piensan mas que 2 #
+
+!SLIDE bullets incremental 
+## Index ##
+### area intermedia (staging area) ###
+
+!SLIDE transition=fade
+### Index ###
+![ref](index.png)
+
+!SLIDE transition=fade
+### Index ###
+![ref](index1.png)
+
+!SLIDE transition=fade
+### Index ###
+![ref](index2.png)
+
+!SLIDE transition=fade
+### Index ###
+![ref](index3.png)
+
+!SLIDE transition=fade
+### Index ###
+![ref](index4.png)
+
+!SLIDE bullets incremental 
+## Index ##
+* no es necesario commitear todo de una 
+* elegir las partes a commitear (git add --interactive)
+* ayuda a hacer review de tus cambios
+* permite tener una historia de cambios mas ordenada y entendible
 
 !SLIDE
     Respositorios alienígenas o remotos
@@ -115,7 +225,6 @@ GIT_DIR
 !SLIDE
     Identificando al acusado
 
-!SLIDE
-    El índice: 3 cabezas piensan mas que 2
+
 
 
