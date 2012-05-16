@@ -216,15 +216,28 @@ INMUTABLES !
 * permite tener una historia de cambios mas ordenada y entendible
 
 !SLIDE
-    Respositorios alienígenas o remotos
-    
+# Respositorios alienígenas o remotos #
+
+!SLIDE
+## Protocols ##
+* ssh://
+* http[s]://
+* git://
+* file://
+* rsync:// <-- deprecated
+* ftp:// <-- deprecated
+
 !SLIDE
 
     Merging vs/y/o Rebasing
 
 !SLIDE
-    Identificando al acusado
-
+# Conclusiones #
+* poner puntos interesantes de Git, como :
+* rápido
+* simple pero potente
+* mejora significativa en el workflow?
+* etc 
 
 
 

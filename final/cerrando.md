@@ -1,15 +1,19 @@
 !SLIDE
-# Final #
+# Material Referencia #
 
-## Bibliografia ##
-* a
-* b
+## Libros ##
+* Pro Git (también versión online) 
+* 
+## Websites ##
+* git-scm
+* git talks
+* why is git better than
 
-## Links ##
+## Videos ##
+* Linus Torvalds @ GTalk
+* Scot Chacon - 
+    
+!SLIDE transition=fade
 
-* c
-* d
+## Gracias! ##
 
-!SLIDE
-
-### Gracias! ###
