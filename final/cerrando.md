@@ -11,8 +11,6 @@
 
 ## Websites ##
 * git-scm.com
-* git talks ?
-* why is git better than x ?
 
 ## Videos ##
 * Charla de Linus Torvalds @ GTalk

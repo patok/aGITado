@@ -6,8 +6,8 @@
 
 !SLIDE smaller bullets incremental
 ## Un poco de historia ##
-* se escribe por necesidad para el kernel del SO Linux en 2005
-* su autor es Linus Torvalds (autor del mismo kernel)
+* se desarrolló como control de versiones para el kernel del SO Linux en el 2005
+* su autor es Linus Torvalds (autor tb del kernel linux)
 * dato curioso 1: comenzó a desarrollar el 3 Abril 2005, en Julio 2005 pasó a etapa de mantenimiento, la release 1.0 salió a finales del 2005.
 * dato curioso 2: qué se usó para versionarlo? El 6 de Abril se usó para auto-hostear su código
 
@@ -18,8 +18,8 @@
 
 !SLIDE smaller
 ## Taxonomías  SCM (source code management)##
-* componente almacenamiento: diffs/deltas , DAG/snapshots
-* componente ubicación: local, centralizado, distribuido
+* clasificación según almacenamiento: diffs/deltas , DAG/snapshots
+* clasificación según arquitectura: local, centralizado, distribuido
 
 !SLIDE
 ## Almacenamiento##
@@ -104,9 +104,5 @@
 !SLIDE
 ## Taxonomía ##
 ![tax](taxonomy-6.png)
-
-!SLIDE
-## Primeros pasos ##
-![step1](.png)
 
 .notes min 21:07 video schacon, o 27:19 gallantgames
