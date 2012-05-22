@@ -8,15 +8,15 @@
 ## Un poco de historia ##
 * se escribe por necesidad para el kernel del SO Linux en 2005
 * su autor es Linus Torvalds (autor del mismo kernel)
-* curiosidad: comenzó a desarrollar el 3 Abril 2005, en Julio 2005 pasó a etapa de mantenimiento, la release 1.0 salió a finales del 2005.
-* curiosidad: qué se usó para versionarlo? El 6 de Abril se usó para auto-hostear su código
+* dato curioso 1: comenzó a desarrollar el 3 Abril 2005, en Julio 2005 pasó a etapa de mantenimiento, la release 1.0 salió a finales del 2005.
+* dato curioso 2: qué se usó para versionarlo? El 6 de Abril se usó para auto-hostear su código
 
 !SLIDE bullets incremental transition=fade
 #Qué no es Git#
 
-* definitivamente _NO_ es una evolución a partir de Subversion
+* definitivamente _NO_ es una evolución de Subversion
 
-!SLIDE
+!SLIDE smaller
 ## Taxonomías  SCM (source code management)##
 * componente almacenamiento: diffs/deltas , DAG/snapshots
 * componente ubicación: local, centralizado, distribuido

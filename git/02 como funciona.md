@@ -4,7 +4,7 @@
 !SLIDE
     Estructura del repositorio
 
-!SLIDE transition=fade
+!SLIDE smaller transition=fade
 
 ## git directory ##
 
@@ -35,8 +35,8 @@
 * object database
 * references
 
-!SLIDE bullets incremental transition=scrollUp
-## object database ##
+!SLIDE smaller bullets incremental transition=scrollUp
+## Object database ##
 * content
 * new_content = type + ' ' + content.size + \0
 * sha = Digest::SHA1.digest(new_content)
@@ -48,11 +48,11 @@
 .notes min 13:23 video gallantgames
 
 !SLIDE bullets incremental transition=fade
-## object database ##
+## Object database ##
 * "loose" format 
 
 !SLIDE bullets smaller incremental transition=scrollUp
-## object database ###
+## Object database ###
 * gc (recolector de basura)
 * mismo fichero con diferencias menores
 
@@ -66,63 +66,77 @@
     .git/objects/pack/pack-b916c14d0420eaaca7a2d9eeea2fd851d4e5b48a.idx
 
 !SLIDE bullets incremental transition=fade
-## Object Database ##
+## Object database ##
 * "packed" format
 
 !SLIDE transition=scrollRight
-## Object Database ##
+## Object database ##
 ![types](object-types.png)
 
-!SLIDE bullets incremental transition=fade
-## object database ##
+!SLIDE bullets smaller incremental transition=fade
+## Object database ##
 * blob
 * cada fichero/file es un blob
 ![tree2](tree2.png)
 
-!SLIDE transition=fade
-## object database ##
-* blob
+!SLIDE smaller transition=fade
+## Object database ##
+blob
+
 ![blob](blob-detail.png)
 
-!SLIDE bullets incremental transition=fade
-## object database ##
+!SLIDE bullets smaller incremental transition=fade
+## Object database ##
+* tree 
+* cada directorio/carpeta se representa con un tree
+![tree3](tree2.png)
+
+!SLIDE bullets smaller transition=fade
+## Object database ##
 * tree 
 * cada directorio/carpeta se representa con un tree
 ![tree3](tree3.png)
 
-!SLIDE bullets incremental transition=fade
-## object database ##
-* tree 
+!SLIDE smaller transition=fade
+## Object database ##
+tree
+
 ![tree](tree-detail.png)
 
-!SLIDE bullets incremental transition=fade
-## object database ##
+!SLIDE bullets smaller transition=fade
+## Object database ##
 * commit
-* un puntero a un root tree + metadata commit (parent, autor, commiter, fecha, mensaje)
+* un puntero a un root tree +
+* metadata commit (parent, autor, commiter, fecha, mensaje)
+
 ![commit](commit-detail.png)
 
-!SLIDE bullets incremental transition=fade
-## object database ##
-* DAG
+!SLIDE bullets smaller transition=fade
+## Object database ##
+DAG
+
 ![dag](object-relationship.png)
 
 !SLIDE transition=fade
-## Object Database ##
+## Object database ##
 ![types](object-types.png)
 
 !SLIDE bullets incremental transition=fade
-## object database ##
+## Object database ##
+tag
+
 ![tag](tag-detail.png)
 
 * .git/objects/20/c71174453dc760692cd...
 * .git/refs/tags/v1.0
 
 !SLIDE
-## Object Database ##
+## Object database ##
+
 ![types](object-types.png)
 
 !SLIDE transition=fade
-## Object Database ##
+## Object database ##
 
 ![types](object-types-locked.png)
 
@@ -130,10 +144,10 @@ INMUTABLES !
 
 !SLIDE bullets incremental 
 ## Muy importante! ##
-* no se borra nada (bueno casi)
-* es muy seguro (SHA1 crypto safe)
-* no se borra la historia
+* una vez commiteado no se puede perder (bueno casi)
+* la historia no se borra, sino
 * se escribe una historia alternativa
+* es muy seguro (el SHA1 es crypto safe)
 
 !SLIDE bullets incremental transition=scrollLeft
 ## references ##
@@ -213,20 +227,20 @@ INMUTABLES !
 !SLIDE bullets incremental 
 ## Index ##
 * no es necesario commitear todo de una 
-* elegir las partes a commitear (git add --interactive)
+* elegir las partes a commitear (git add --patch)
 * ayuda a hacer review de tus cambios
 * permite tener una historia de cambios mas ordenada y entendible
 
 !SLIDE
 # Respositorios alienígenas o remotos #
-Los repositorios remotos no son mas que un mecanismo para compartir código, lo que se hace con estos repositorios o copias de ntra. base de objetos es _sincronizar_ a través de las operaciones: push, fetch (pull).
+Los repositorios remotos permiten compartir el código, básicamente son copias de ntra. base de objetos, para _sincronizarlos_ usamos: *push*, *fetch* (*pull*).
 
-!SLIDE
+!SLIDE smaller
 ## Protocolos ##
-* ssh:// (pull y push)
-* http[s]:// (pull)
+* ssh:// (push y pull)
+* http[s]:// (pull - sólo lectura)
 * git:// (pull)
-* file:// (pull y push)
+* file:// (push y pull)
 * rsync:// <-- deprecated
 * ftp:// <-- deprecated
 
@@ -307,7 +321,7 @@ Los repositorios remotos no son mas que un mecanismo para compartir código, lo 
 ### Repo Dictador-Teniente ###
 ![remote](dist-workflow-3.png)
 
-!SLIDE smaller bullets incremental
+!SLIDE smaller smbullets incremental
 # En definitiva ... conclusiones #
 * Su diseño y naturaleza distribuida hacen que Git sea: 
 
