@@ -1,5 +1,7 @@
-    Ejemplos de empleo
+!SLIDE
+# Ejemplos de uso #
 
-    Git + SVN
-    Feature branches
+### Su empleo y aplicaciones prácticas ###
+
+
 

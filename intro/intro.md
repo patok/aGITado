@@ -1,7 +1,6 @@
 !SLIDE small
 # Acontecer de un código aGITado#
 ##(breve semblanza de Git: usos y abusos)##
-###Por Damian Valdés - Patricio Keilty###
 
 ![Git logo](../2color-lightbg.png) 
 
@@ -17,12 +16,6 @@
    * Cómo funciona?
     * Estructura del repositorio
     * El índice: 3 cabezas piensan mas que 2
-    * Respositorios alienígenas
-    * Merging vs Rebasing
-   * Usando Git ... y ahora qué?
-    * Modelos de Repositorios
-    * Flujos de trabajo
-   * Ejemplos de empleo
-    * Git + SVN
-    * Feature branches
+    * Respositorios remotos
+   * Ejemplos de uso y aplicación
  

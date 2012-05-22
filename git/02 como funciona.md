@@ -45,6 +45,8 @@
 * path = .git/objects/b1/7b55b9f1a8e...
 * File.open(path, 'w') {|f| f.write(compressed)}
 
+.notes min 13:23 video gallantgames
+
 !SLIDE bullets incremental transition=fade
 ## object database ##
 * "loose" format 
@@ -217,27 +219,108 @@ INMUTABLES !
 
 !SLIDE
 # Respositorios alienígenas o remotos #
+Los repositorios remotos no son mas que un mecanismo para compartir código, lo que se hace con estos repositorios o copias de ntra. base de objetos es _sincronizar_ a través de las operaciones: push, fetch (pull).
 
 !SLIDE
-## Protocols ##
-* ssh://
-* http[s]://
-* git://
-* file://
+## Protocolos ##
+* ssh:// (pull y push)
+* http[s]:// (pull)
+* git:// (pull)
+* file:// (pull y push)
 * rsync:// <-- deprecated
 * ftp:// <-- deprecated
 
 !SLIDE
+##Repo remoto##
+![remote](remote1.png)
 
-    Merging vs/y/o Rebasing
+.notes 42:00 video gallantgames
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote2.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote3.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote4.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote5.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote6.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote7.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote8.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote9.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote10.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote11.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote12.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote13.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote14.png)
+
+!SLIDE transition=fade
+##Repo remoto##
+![remote](remote15.png)
 
 !SLIDE
-# Conclusiones #
-* poner puntos interesantes de Git, como :
-* rápido
-* simple pero potente
-* mejora significativa en el workflow?
-* etc 
+##Modelos de interacción con Remotes##
+### Repo centralizado ###
+![remote](dist-workflow-1.png)
 
+!SLIDE
+##Modelos de interacción con Remotes##
+### Repo tipo Integration Manager ###
+![remote](dist-workflow-2.png)
+
+!SLIDE
+##Modelos de interacción con Remotes##
+### Repo Dictador-Teniente ###
+![remote](dist-workflow-3.png)
+
+!SLIDE smaller bullets incremental
+# En definitiva ... conclusiones #
+* Su diseño y naturaleza distribuida hacen que Git sea: 
+
+ * rápido y eficiente (las operaciones mas usadas son locales)
+ * todos tienen una copia, por ende hay muchos backups ;)
+ * no se necesita estar conectado para:
+  + ver la historia de un file
+  + hacer un branch
+  + mergear código
+  + commitear código
+  + ver diferencias entre versiones
+  + obtener cualquier versión de un file
+
+.notes características sobresalientes a un Distributed vcm : min 9:20 -  10:30 
 
 

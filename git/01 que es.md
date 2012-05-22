@@ -1,24 +1,23 @@
 !SLIDE smaller bullets incremental
 # Qué es git? #
-* sistema de gestión de contenido de directorios (directory content management system)
-* sistema de almacenamiento de la historia de un arbol (tree history storage system)
-* un rastreador estúpido/simple de info - [stupid content tracker](http://translate.google.com/#auto|es|you%20are%20a%20git)
-* un sistema de control de versiones distribuido
-* un sistema global de seguimiento de información (global information tracker)
+* es un sistema de _código abierto_ de control de versiones _distribuido_, diseñado para ser _veloz y eficiente_
 
-!SLIDE transition=fade
+.notes segunda acepción: un rastreador estúpido/simple de info - [stupid content tracker](http://translate.google.com/#auto|es|you%20are%20a%20git)
 
-* mostramos a linux torvalds?*
+!SLIDE smaller bullets incremental
+## Un poco de historia ##
+* se escribe por necesidad para el kernel del SO Linux en 2005
+* su autor es Linus Torvalds (autor del mismo kernel)
+* curiosidad: comenzó a desarrollar el 3 Abril 2005, en Julio 2005 pasó a etapa de mantenimiento, la release 1.0 salió a finales del 2005.
+* curiosidad: qué se usó para versionarlo? El 6 de Abril se usó para auto-hostear su código
 
 !SLIDE bullets incremental transition=fade
 #Qué no es Git#
 
-* definitivamente no es SubVersion
-* no es una evolución a partir de subversion
+* definitivamente _NO_ es una evolución a partir de Subversion
 
 !SLIDE
-## Taxonomías  SCM (source control management)##
-
+## Taxonomías  SCM (source code management)##
 * componente almacenamiento: diffs/deltas , DAG/snapshots
 * componente ubicación: local, centralizado, distribuido
 
@@ -106,4 +105,8 @@
 ## Taxonomía ##
 ![tax](taxonomy-6.png)
 
+!SLIDE
+## Primeros pasos ##
+![step1](.png)
 
+.notes min 21:07 video schacon, o 27:19 gallantgames
